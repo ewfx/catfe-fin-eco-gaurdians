@@ -1,0 +1,7 @@
+test scenario 1
+I open the application
+Login using adminEmail admin@example.com and Password qwerty valid credentials
+
+test scenario 1
+I open the application
+Login using adminEmail admin@example.com and Password 12345 invalid credentials
