@@ -1,0 +1,124 @@
+Feature: login.txt # features/login.txt.feature:1
+
+  Scenario: 1                                                                           # features/login.txt.feature:3
+    Given I open the application                                                        # features/steps/login.txt_steps.py:20
+      Traceback (most recent call last):
+        File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\behave\model.py", line 1329, in run
+          match.run(runner.context)
+        File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\behave\matchers.py", line 98, in run
+          self.func(context, *args, **kwargs)
+        File "features\steps\login.txt_steps.py", line 23, in step_open_browser
+          driver.get("http://localhost:3000/crud-app")
+        File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in get
+          self.execute(Command.GET, {"url": url})
+        File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+          self.error_handler.check_response(response)
+        File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+          raise exception_class(message, screen, stacktrace)
+      selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+        (Session info: chrome=134.0.6998.118)
+      Stacktrace:
+      	GetHandleVerifier [0x00AFC7F3+24435]
+      	(No symbol) [0x00A82074]
+      	(No symbol) [0x009506E3]
+      	(No symbol) [0x0094DB6E]
+      	(No symbol) [0x00941458]
+      	(No symbol) [0x00942D60]
+      	(No symbol) [0x009416E7]
+      	(No symbol) [0x00941243]
+      	(No symbol) [0x00940F51]
+      	(No symbol) [0x0093EE30]
+      	(No symbol) [0x0093F8BB]
+      	(No symbol) [0x0095419E]
+      	(No symbol) [0x009DFEE7]
+      	(No symbol) [0x009BD7BC]
+      	(No symbol) [0x009DF20A]
+      	(No symbol) [0x009BD5B6]
+      	(No symbol) [0x0098C54F]
+      	(No symbol) [0x0098D894]
+      	GetHandleVerifier [0x00E070A3+3213347]
+      	GetHandleVerifier [0x00E1B0C9+3295305]
+      	GetHandleVerifier [0x00E1558C+3271948]
+      	GetHandleVerifier [0x00B97360+658144]
+      	(No symbol) [0x00A8B27D]
+      	(No symbol) [0x00A88208]
+      	(No symbol) [0x00A883A9]
+      	(No symbol) [0x00A7AAC0]
+      	BaseThreadInitThunk [0x75A9FCC9+25]
+      	RtlGetAppContainerNamedObjectPath [0x77B882AE+286]
+      	RtlGetAppContainerNamedObjectPath [0x77B8827E+238]
+      
+      
+      Captured logging:
+      INFO:WDM:====== WebDriver manager ======
+      INFO:WDM:Get LATEST chromedriver version for google-chrome
+      INFO:WDM:Get LATEST chromedriver version for google-chrome
+      INFO:WDM:Get LATEST chromedriver version for google-chrome
+      INFO:WDM:WebDriver version 134.0.6998.165 selected
+      INFO:WDM:Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.165/win32/chromedriver-win32.zip
+      INFO:WDM:About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/134.0.6998.165/win32/chromedriver-win32.zip
+      INFO:WDM:Driver downloading response is 200
+      INFO:WDM:Get LATEST chromedriver version for google-chrome
+      INFO:WDM:Driver has been saved in cache [C:\Users\User\.wdm\drivers\chromedriver\win64\134.0.6998.165]
+
+    Then Login using adminEmail admin@example.com and Password qwerty valid credentials # None
+
+  Scenario: 2                                                                    # features/login.txt.feature:6
+    Given I open the application                                                 # features/steps/login.txt_steps.py:20
+      Traceback (most recent call last):
+        File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\behave\model.py", line 1329, in run
+          match.run(runner.context)
+        File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\behave\matchers.py", line 98, in run
+          self.func(context, *args, **kwargs)
+        File "features\steps\login.txt_steps.py", line 23, in step_open_browser
+          driver.get("http://localhost:3000/crud-app")
+        File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in get
+          self.execute(Command.GET, {"url": url})
+        File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+          self.error_handler.check_response(response)
+        File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+          raise exception_class(message, screen, stacktrace)
+      selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+        (Session info: chrome=134.0.6998.118)
+      Stacktrace:
+      	GetHandleVerifier [0x00AFC7F3+24435]
+      	(No symbol) [0x00A82074]
+      	(No symbol) [0x009506E3]
+      	(No symbol) [0x0094DB6E]
+      	(No symbol) [0x00941458]
+      	(No symbol) [0x00942D60]
+      	(No symbol) [0x009416E7]
+      	(No symbol) [0x00941243]
+      	(No symbol) [0x00940F51]
+      	(No symbol) [0x0093EE30]
+      	(No symbol) [0x0093F8BB]
+      	(No symbol) [0x0095419E]
+      	(No symbol) [0x009DFEE7]
+      	(No symbol) [0x009BD7BC]
+      	(No symbol) [0x009DF20A]
+      	(No symbol) [0x009BD5B6]
+      	(No symbol) [0x0098C54F]
+      	(No symbol) [0x0098D894]
+      	GetHandleVerifier [0x00E070A3+3213347]
+      	GetHandleVerifier [0x00E1B0C9+3295305]
+      	GetHandleVerifier [0x00E1558C+3271948]
+      	GetHandleVerifier [0x00B97360+658144]
+      	(No symbol) [0x00A8B27D]
+      	(No symbol) [0x00A88208]
+      	(No symbol) [0x00A883A9]
+      	(No symbol) [0x00A7AAC0]
+      	BaseThreadInitThunk [0x75A9FCC9+25]
+      	RtlGetAppContainerNamedObjectPath [0x77B882AE+286]
+      	RtlGetAppContainerNamedObjectPath [0x77B8827E+238]
+
+    Then Login using adminEmail admin@example.com and Password 12345 credentials # None
+
+
+Failing scenarios:
+  features/login.txt.feature:3  1
+  features/login.txt.feature:6  2
+
+0 features passed, 1 failed, 0 skipped
+0 scenarios passed, 2 failed, 0 skipped
+0 steps passed, 2 failed, 2 skipped, 0 undefined
+Took 0m20.211s
